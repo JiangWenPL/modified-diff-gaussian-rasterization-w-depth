@@ -359,8 +359,8 @@ renderCUDA(
 			for (int ch = 0; ch < CHANNELS; ch++)
 				C[ch] += features[collected_id[j] * CHANNELS + ch] * alpha * T;
 
-			T = test_T;
 			depth += collected_depth[j] * alpha * T;
+			T = test_T;
 
 			// Keep track of last range entry to update this
 			// pixel.
